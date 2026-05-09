@@ -169,16 +169,13 @@ This backend provides secure authentication, role-based authorization, shopping 
 
 # Setup Instructions
 
-## Clone Repository
-
-git clone https://github.com/Ruchira19/biteflow-spring-backend.git
-
 ## Configure Database
 
-    CREATE DATABASE food_ordering_db;
-
-Update datasource properties inside:
-src/main/resources/application-dev.properties
+    Update dd-auto property to create as follows in the first time, then change it to update: 
+    
+    file path: src/main/resources/application-dev.properties
+    
+    spring.jpa.hibernate.ddl-auto=create
 
 ---
 
